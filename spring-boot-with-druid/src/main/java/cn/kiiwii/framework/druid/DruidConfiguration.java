@@ -3,6 +3,9 @@ package cn.kiiwii.framework.druid;
 import com.alibaba.druid.pool.DruidDataSource;
 import com.alibaba.druid.support.http.StatViewServlet;
 import com.alibaba.druid.support.http.WebStatFilter;
+import com.alibaba.druid.util.JdbcUtils;
+import com.p6spy.engine.spy.P6DataSource;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean;
@@ -49,12 +52,13 @@ public class DruidConfiguration {
         druidDataSource.setConnectionProperties(properties.getConnectionProperties());
         try {
             druidDataSource.setFilters(properties.getFilters());
+            druidDataSource.setDbType(JdbcUtils.MYSQL);
             druidDataSource.init();
         } catch (SQLException e) {
             e.printStackTrace();
         }
 
-        return druidDataSource;
+        return  new P6DataSource(druidDataSource);
     }
 
     @Bean

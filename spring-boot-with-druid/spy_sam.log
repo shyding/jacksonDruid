@@ -1,0 +1,30 @@
+|22|statement|connection 0|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+|0|resultset|connection -1|SELECT 1 FROM DUAL|
+|14|statement|connection 1|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+|0|resultset|connection -1|SELECT 1 FROM DUAL|
+|2|statement|connection 2|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+|0|resultset|connection -1|SELECT 1 FROM DUAL|
+|2|statement|connection 3|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+|0|resultset|connection -1|SELECT 1 FROM DUAL|
+|8|statement|connection 4|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+|0|resultset|connection -1|SELECT 1 FROM DUAL|
+|23|statement|connection 0|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+|0|resultset|connection -1|SELECT 1 FROM DUAL|
+|2|statement|connection 1|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+|0|resultset|connection -1|SELECT 1 FROM DUAL|
+|11|statement|connection 2|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+|0|resultset|connection -1|SELECT 1 FROM DUAL|
+|16|statement|connection 3|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+|0|resultset|connection -1|SELECT 1 FROM DUAL|
+|2|statement|connection 4|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+|0|resultset|connection -1|SELECT 1 FROM DUAL|
+|20|statement|connection 0|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+|0|resultset|connection -1|SELECT 1 FROM DUAL|
+|2|statement|connection 1|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+|0|resultset|connection -1|SELECT 1 FROM DUAL|
+|2|statement|connection 2|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+|0|resultset|connection -1|SELECT 1 FROM DUAL|
+|4|statement|connection 3|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+|0|resultset|connection -1|SELECT 1 FROM DUAL|
+|2|statement|connection 4|SELECT 1 FROM DUAL|SELECT 1 FROM DUAL
+|0|resultset|connection -1|SELECT 1 FROM DUAL|

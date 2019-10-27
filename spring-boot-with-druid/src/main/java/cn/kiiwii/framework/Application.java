@@ -17,6 +17,8 @@ import org.springframework.transaction.PlatformTransactionManager;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 import org.springframework.web.bind.annotation.RestController;
 
+import cn.kiiwii.framework.mybatis.util.LogUtil;
+
 import javax.sql.DataSource;
 
 /**
@@ -45,6 +47,8 @@ public class Application extends SpringBootServletInitializer {
     }
 
     public static void main(String[] args) throws Exception {
-        SpringApplication.run(Application.class, args);
+    	LogUtil.info("main_start");
+    	SpringApplication.run(Application.class, args);
+    	LogUtil.info("main_end");
     }
 }

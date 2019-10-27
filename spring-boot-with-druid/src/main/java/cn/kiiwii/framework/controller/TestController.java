@@ -1,5 +1,6 @@
 package cn.kiiwii.framework.controller;
 
+import cn.kiiwii.framework.mybatis.util.LogUtil;
 import cn.kiiwii.framework.service.ITestService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -20,12 +21,14 @@ public class TestController {
 
     @RequestMapping("/test")
     public String greeting() {
+    	LogUtil.info("greeting");
         testService.test();
         return "hello";
     }
 
     @RequestMapping("/testTrans")
     public String testTrans() {
+    	LogUtil.info("testTrans");
         try {
             testService.testTransaction();
         } catch (Exception e) {
