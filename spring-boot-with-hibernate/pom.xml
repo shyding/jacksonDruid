@@ -10,7 +10,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <properties>
-        <hibernate.version>4.3.5.Final</hibernate.version>
+        <hibernate.version>5.3.20.Final</hibernate.version>
     </properties>
     <artifactId>spring-boot-with-hibernate</artifactId>
     <dependencies>
